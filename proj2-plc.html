@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proj2-plc.css">
+    <title>Tóth Richárd Adrián - Portfólió</title>
+</head>
+<body>
+    <header>
+        <div class="felsosav">
+            <img class="profile-img" src="img/viktor-fonok.jfif" alt="Profilkép">
+            <div class="gombok">
+                <a href="index.html" id="gomb">Főoldal</a>
+                <a href="rolam.html" id="gomb">Rólam</a>
+                <a href="kkk.html" id="gomb">Követelmények</a>
+                <a href="" id="gomb">Önéletrajz</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="cimdoboz"><h1>Projekt #2 - Automatikus átrakodás</h1></div>
+        <div id="csikbox"><div id="szurkecsik"></div></div>
+        <div id="cimdoboz"><h1>Projektfeladat leírása</h1></div>
+        <div id="leiras"><h1>A berendezés működése során egy pneumatikus kar kitolja a korongot a toronytárolóból, majd egy vákuumos megfogóval ellátott forgókar áthelyezi azt a kijelölt pozícióba. A rendszer biztosítja, hogy csak akkor induljon vissza a kar, ha a vákuumszenzor visszajelzése alapján a megfelelő szívóhatás létrejött. A működés teljes egészében a HMI felületéről vezérelhető , ahol a felhasználó a rendszer indítását és leállítását vezérelheti, valamint megadhatja a kitárazandó korongok számát. Amennyiben kifogynak a korongok, abban az esetben a kijelzőn jelzi a rendszer a kezelőnek, hogy nincs korong, illetve a program sem indul el.</h1>
+        </div>
+        <div id="csikbox"><div id="szurkecsik"></div></div> 
+        <div id="cimdoboz"><h1>A projektben használt hardveres eszközök</h1></div>
+        <div id="leiras">
+            <h1>
+                ● PLC (Programozható Logikai Egység) – Siemens Simatic S7-1200 ●<br>
+                ● HMI Panel – Siemens Simatic HMI ●<br>
+                ● Switch – Siemens Scalance XB005 ●<br>
+                ● HP ProBook 650 G8 Notebook ●<br>
+                ● Pneumatikus munkahengerek – a korongok kitolására és a kar mozgatására ●<br>
+                ● Festo vákuumgenerátor és vákuumszenzor ●<br>
+                ● Pozíció érzékelők ●<br>
+                ● Tápegység (24VDC) ●<br>
+                ● Kompresszor a sűrített levegő ellátáshoz ●<br>
+
+            </h1>
+        </div>
+        <div id="csikbox"><div id="szurkecsik"></div></div>
+        <div id="cimdoboz"><h1>Konklúzió és Önreflexió</h1></div>
+        <div id="leiras" style="margin-bottom: 8px;"><h1>A projekt során felépítettem egy rendszert, ami egy oszloptárolóból automatikusan átpakolja a
+        korongokat a kijelölt pontra, és jelzi a kezelőnek ha üres a tároló. A rendszer HMI-n keresztül
+        vezérelt, TIA V17-ben készített program. A projekt során sikerült egy logikusan felépített, ipari
+        szemléletű vezérlőrendszert kialakítanom. A munka közben azonban jelentős nehézséggel szembesültem, mivel egy ponton teljesen újra kellett
+        kezdenem a programozást. A rendszer működése nem volt megfelelő, és nem tudtam pontosan
+        beazonosítani a hiba okát, ami valószínűleg a nem kellően átgondolt programstruktúrából adódott. Ez
+        kezdetben frusztráló volt, ugyanakkor rávilágított arra, mennyire fontos a vezérlési folyamat előzetes
+        megtervezése. Az újrakezdés után már strukturáltabban, átláthatóbban építettem fel a programot, ami
+        stabilabb működést eredményezett. A hibakeresés során sokat fejlődött a problémamegoldó
+        képességem és a PLC programozási gyakorlatom.
+        Összeségében a projekt nemcsak szakmai tudásomat mélyítette el, hanem kitartásra és precízebb
+        munkavégzésre is tanított.</h1></div>
+        <div id="csikbox"><div id="szurkecsik"></div></div>
+        <div id="dokumentacio">
+            <iframe src="doc/plc.pdf" frameborder="0" id="imppdf"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2026 - Tóth Richárd Adrián</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex:1; /* Ez kitöltö a maradék helyett a footer és a main között */
+}
+
+/* A header rész tulajdonságai */
+
+.felsosav{
+    background-color: rgb(95, 135, 180);
+    height: 80px;
+    width: 100%;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* A header részben található "gombok" tulajdonságai */
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid rgb(3, 79, 167);
+  margin-top: 50px;
+  object-fit: cover;
+}
+
+.profile-img:hover {
+    transform: translateY(-5px);
+    transition: 0.2s ease;
+}
+
+.gombok {
+    gap: 20px;
+    display: flex;
+    gap: 30px;
+    margin-left: 700px;
+}
+
+#gomb{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#gomb-act{
+    text-decoration: underline;
+    color: white;
+}
+
+/* ------------------------------------------------------------------ */
+
+#cimdoboz {
+    display: flex;
+    justify-content: center;
+    color: rgb(3, 79, 167);
+}
+
+/* Cím és a beimportált pdf közötti csík tulajdonságai */
+
+#szurkecsik {
+    height: 0px;
+    width: 80%;
+    border: 1px solid rgba(196, 196, 196, 0.596);
+}
+
+#csikbox {
+    display: flex;
+    justify-content: center;
+}
+
+/* Beimportált dokumentum tulajdonságai */
+
+#kovetelmeny {
+    display: flex;
+    justify-content: center;
+}
+
+#imppdf {
+    margin-top: 20px;
+    width: 1250px;
+    height: 1200px;
+}
+
+/* Lábrész tulajdonságai */
+
+footer {
+    display: flex;
+    background-color: rgb(95, 135, 180);
+    opacity: 0.8;
+    height: 80px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+footer p {
+    color: white;
+    margin-left: 50px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oneletrajz.css">
+    <title>Tóth Richárd Adrián</title>
+</head>
+<body>
+    <header>
+        <div class="felsosav">
+            <img class="profile-img" src="img/viktor-fonok.jfif" alt="Profilkép">
+            <div class="gombok">
+                <a href="index.html" id="gomb">Főoldal</a>
+                <a href="rolam.html" id="gomb">Rólam</a>
+                <a href="kkk.html" id="gomb">Követelmények</a>
+                <a href="" id="gomb">Önéletrajz</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="cimdoboz"><h1>Tóth Richárd Adrián - Önéletrajz</h1></div>
+        <div id="csikbox"><div id="szurkecsik"></div></div>
+        <div id="nyelv_gomb">
+            <div id="magyargomb"><button id="magyargomb_szoveg">Magyar Önéletrajz</button></div>
+            <div id="angolgomb"><button id="angolgomb_szoveg">Angol Önéletrajz</button></div>
+        </div>
+
+        <div id="magyaroneletrajz">
+            <iframe src="doc/kkk.pdf" frameborder="0" id="imppdf"></iframe>
+        </div>
+
+        <div id="angoloneletrajz">
+            <iframe src="doc/cv_angol.pdf" frameborder="0" id="imppdf"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright © 2026 - Tóth Richárd Adrián</p>
+    </footer>
+    <script>
+        const magyargomb = document.getElementById("magyargomb")
+        const angolgomb = document.getElementById("angolgomb")
+
+        const magyaroneletrajz = document.getElementById("magyaroneletrajz")
+        const angoloneletrajz = document.getElementById("angoloneletrajz")
+
+        angoloneletrajz.style.display = "none"
+        magyargomb.style.opacity = "0.5"
+
+        magyargomb.addEventListener("click", function(){
+            magyaroneletrajz.style.display = "flex"
+            angoloneletrajz.style.display = "none"
+            angolgomb.style.opacity = "1"
+            magyargomb.style.opacity = "0.5"
+            magyargomb.classList.add("gombki")
+            magyargomb.classList.remove("gombbe")
+            angolgomb.classList.add("gombbe")
+            angolgomb.classList.remove("gombki")
+        })
+
+        angolgomb.addEventListener("click", function(){
+            magyaroneletrajz.style.display = "none"
+            angoloneletrajz.style.display = "flex"
+            angolgomb.style.opacity = "0.5"
+            magyargomb.style.opacity = "1"
+            magyargomb.classList.add("gombbe")
+            magyargomb.classList.remove("gombki")
+            angolgomb.classList.add("gombki")
+            angolgomb.classList.remove("gombbe")
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex:1; /* Ez kitöltö a maradék helyett a footer és a main között */
+}
+
+/* A header rész tulajdonságai */
+
+.felsosav{
+    background-color: rgb(95, 135, 180);
+    height: 80px;
+    width: 100%;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* A header részben található "gombok" tulajdonságai */
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 4px solid rgb(3, 79, 167);
+  margin-top: 50px;
+  object-fit: cover;
+}
+
+.profile-img:hover {
+    transform: translateY(-5px);
+    transition: 0.2s ease;
+}
+
+.gombok {
+    gap: 20px;
+    display: flex;
+    gap: 30px;
+    margin-left: 800px;
+}
+
+#gomb{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#gomb-act{
+    text-decoration: underline;
+    color: white;
+}
+
+/* ------------------------------------------------------------------ */
+
+#cimdoboz {
+    display: flex;
+    justify-content: center;
+    color: rgb(3, 79, 167);
+}
+
+/* Cím és a csík tulajdonságai */
+
+#szurkecsik {
+    height: 0px;
+    width: 80%;
+    border: 1px solid rgba(196, 196, 196, 0.596);
+}
+
+#csikbox {
+    display: flex;
+    justify-content: center;
+}
+
+#csikbox-rolam {
+    margin-left: 200px;
+}
+
+#csikbox2 {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#udv-kozep {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#udvozles {
+    border: none;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+#balszek {
+    width: 80%;
+}
+
+#balszek img {
+    width: 15%;
+    float: left;
+    margin-right: 25px;
+}
+
+#jobbszek {
+    width: 300px;
+    height: 230px;
+    background-color: rgba(175, 204, 238, 0.2);
+    margin-left: 100px;
+}
+
+/* Rólam leírásának és címnek tulajdonságai */
+
+#rolam-leiras {
+    color: rgb(78, 122, 172);
+    font-size: 24px;
+}
+
+#rolam-udv {
+    color: rgb(3, 79, 167);
+    font-size: 2em;
+}
+
+/* Elérhetőségeim tulajdosnágai */
+
+#eler-cim {
+    margin-left: 25px;
+    margin-top: 30px;
+    font-size: 28px;
+    color: rgb(3, 79, 167);
+}
+
+#eler-szov1 {
+    margin-top: 30px;
+    margin-left: 25px;
+    color: rgb(3, 79, 167);
+    font-size: 18px;
+}
+
+#eler-szov {
+    margin-left: 25px;
+    color: rgb(3, 79, 167);
+    font-size: 18px;
+}
+
+/* Kézségek tulajdonságai */
+
+#kezseg-fo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+#kezseg-kicsi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(95, 135, 180, 0.2);
+    border-radius: 8px;
+    color: rgb(3, 79, 167);
+    font-weight: bold;
+}
+
+/* Lábrész tulajdonságai */
+
+footer {
+    display: flex;
+    background-color: rgb(95, 135, 180);
+    opacity: 0.8;
+    height: 80px;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    margin-left: 50px;
+}

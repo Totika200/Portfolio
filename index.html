@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Tóth Richárd Adrián - Portfólió</title>
+</head>
+<body>
+    <header>
+        <div class="felsosav">
+            <div class="gombok">
+                <a href="index.html" id="gomb">Főoldal</a>
+                <a href="rolam.html" id="gomb">Rólam</a>
+                <a href="kkk.html" id="gomb">Követelmények</a>
+                <a href="oneletrajz.html" id="gomb">Önéletrajz</a>
+            </div>
+        </div>
+    </header>
+    <div><img src="img/en.png" alt="" id="profile-img"></div>
+    <main>
+        <div id="cimdoboz"><h1>Tóth Richárd Adrián - Portfólió</h1></div>
+        <div id="csikbox"><div id="szurkecsik"></div></div>
+        <div id="cimdoboz"><h1>Üdvözlöm!</h1></div>
+        <div id="alcimdoboz"><h1>Mindenek előtt szeretnék bemutatkozni!</h1></div>
+        <div id="tobbgomb"><a href="rolam.html"><button>Tudjon meg többet rólam</button></a></div>
+        <div id="csikbox2"><div id="szurkecsik"></div></div>
+        <div id="cimdoboz"><h1>Projektjeim</h1></div>
+        <div id="alcimdoboz"><h1>Néhány nagyobb volumenű munkám.</h1></div>
+        <div id="fobox">
+            <div id="proj">
+                    <a href="proj1-vasutiatjaro.html"><div id="projbox"><img src="./img/proj1-bor.png" alt="" id="proj1bor"><h1>Vasúti átjáró</h1></div></a>
+                    <a href="proj2-plc.html"><div id="projbox"><img src="./img/proj2-bor.png" alt="" id="proj1bor"><h1>Automatikus átrakodás</h1></div></a>
+                    <a href="proj3-webszerver.html"><div id="projbox"><img src="./img/proj3-bor.png" alt="" id="proj1bor"><h1>Webszerver készítése</h1></div></a>
+            </div>
+        
+            <div id="tobbproj">
+                <a href="proj4-esp32.html"><div id="projbox"><img src="./img/proj4-bor.png" alt="" id="proj1bor"><h1>Távolról vezérelt ESP32</h1></div></a>
+                <a href="proj5-webkeszites.html"><div id="projbox"><img src="./img/proj5-bor.png" alt="" id="proj1bor"><h1>Weblapkészítés</h1></div></a>
+                <a href="proj6-robotkar.html"><div id="projbox"><img src="./img/lllll.png" alt="" id="proj1bor"><h1>R betű kirakás robottal</h1></div></a>
+            </div>
+
+        </div>
+        <div id="tobbprojgomb"><button id="tobbprojgomb_szoveg">ᐁ Még több Projekt</button></div>
+        <div id="csikbox" style="margin-top: 25px; margin-bottom: 25px;"><div id="szurkecsik"></div></div>
+        </main>
+    <footer>
+        <p>Copyright © 2026 - Tóth Richárd Adrián</p>
+    </footer>
+    <script>
+        const tobbprojgomb = document.getElementById("tobbprojgomb")
+        const tobbprojgomb_szoveg = document.getElementById("tobbprojgomb_szoveg")
+
+        const tobbproj = document.getElementById("tobbproj")
+
+        let allapot = 0
+
+        tobbprojgomb.addEventListener("click", function(){
+            if (allapot === 0) {
+                tobbproj.style.visibility = "visible"
+                tobbproj.style.display = "flex"
+                tobbprojgomb_szoveg.textContent = "ᐃ Kevesebb Projekt"
+                allapot = 1
+            }
+            else if (allapot === 1) {
+                tobbproj.style.visibility = "hidden"
+                tobbproj.style.display = "none"
+                tobbprojgomb_szoveg.textContent = "ᐁ Még több Projekt"
+                allapot = 0
+            }
+        })
+    </script>
+</body>
+</html>

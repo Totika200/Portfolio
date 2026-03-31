@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="proj4-esp32.css">
     <link rel="icon" href="img/kkando.png">
     <title>Tóth Richárd Adrián - Portfólió</title>
@@ -18,7 +19,7 @@
             </div>
         </div>
     </header>
-    <div><img src="img/en.png" alt="" id="profile-img"></div>
+    <div><img src="img/en_miniavatar.jpg" alt="" id="profile-img"></div>
     <main>
         <div id="cimdoboz"><h1>Projekt #4 - Távolról vezérelt ESP32</h1></div>
         <div id="csikbox"><div id="szurkecsik"></div></div>
@@ -55,8 +56,21 @@
         <div id="csikbox"><div id="szurkecsik"></div></div>
         <div id="cimdoboz"><h1>Képek és Videók</h1></div>
         <div id="kepboxok">
-            <img src="img/proj1/kep.jpg" alt="" id="kep1">
+            <img src="img/proj4/kep1.jpg" alt="" id="kep1">
+            <img src="img/proj4/kep2.jpg" alt="" id="kep2">
+            <img src="img/proj4/kep3.jpg" alt="" id="kep3">
+            <img src="img/proj4/kep4.jpg" alt="" id="kep4">
         </div>
+        <div id="kepboxok" style="margin-top: 25px;">
+            <img src="img/proj4/kep5.jpg" alt="" id="kep5">
+            <img src="img/proj4/kep6.jpg" alt="" id="kep6">
+            <img src="img/proj4/kep7.jpg" alt="" id="kep7">
+        </div>
+
+        <div id="kepboxok" style="margin-top: 25px; margin-bottom: 0px;">
+            <video muted loop id="video1"><source src="img/proj4/mukodes.mp4" type="video/mp4"></video>
+        </div>
+        <div id="vidstartgomb"><button onclick="playPause()" id="vidstart_szoveg"><i class="fa fa-play"></i> Videó Elindítása</button></div>
         <div id="csikbox" style="margin-top: 25px;"><div id="szurkecsik"></div></div>
         <div id="dokumentacio">
             <iframe src="doc/esp32.pdf" frameborder="0" id="imppdf"></iframe>
@@ -65,6 +79,22 @@
     <footer>
         <p>Copyright © 2026 - Tóth Richárd Adrián</p>
     </footer>
+
+    <script>
+        const video = document.getElementById("video1");
+        const szoveg = document.getElementById("vidstart_szoveg");
+
+        function playPause() { 
+            if (video.paused) {
+                video.play(); 
+                szoveg.innerHTML = '<i class="fa fa-pause"></i> Videó Leállítása';
+            } else {
+                video.pause(); 
+                szoveg.innerHTML = '<i class="fa fa-play"></i> Videó Elindítása';
+            }
+}
+
+    </script>
 </body>
 </html>
 

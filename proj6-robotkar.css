@@ -21,8 +21,6 @@ main{
     align-items: center;
 }
 
-/* A header részben található "gombok" tulajdonságai */
-
 #profile-img {
   width: 90px;
   height: 90px;
@@ -40,11 +38,13 @@ main{
     transition: 0.2s ease;
 }
 
+/* A header részben található "gombok" tulajdonságai */
+
 .gombok {
     gap: 20px;
     display: flex;
     gap: 30px;
-    margin-left: 700px;
+    margin-left: 800px;
 }
 
 #gomb{
@@ -111,7 +111,22 @@ main{
 
 #kep1 {
     width: 300px;
-    height: 220px;
+    height: 310px;
+}
+
+#kep2 {
+    width: 400px;
+    height: 310px;
+}
+
+#kep3 {
+    width: 400px;
+    height: 310px;
+}
+
+#kep4 {
+    width: 400px;
+    height: 310px;
 }
 
 /* Beimportált dokumentum tulajdonságai */

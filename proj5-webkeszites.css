@@ -96,6 +96,69 @@ main{
     padding-right: 120px;
 }
 
+/* Képek tulajdonságai */
+#kepboxok {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#kepboxok img {
+    border: 1px solid rgba(196, 196, 196, 0.596);
+    border-radius: 8px;
+}
+
+#kep1 {
+    width: 350px;
+    height: 200px;
+}
+
+#kep2 {
+    width: 350px;
+    height: 200px;
+}
+
+#kep3 {
+    width: 350px;
+    height: 200px;
+}
+
+#kep4 {
+    width: 350px;
+    height: 200px;
+}
+
+#kep5 {
+    width: 350px;
+    height: 200px;
+}
+
+#kep6 {
+    width: 350px;
+    height: 200px;
+}
+
+#kep7 {
+    width: 350px;
+    height: 200px;
+}
+
+#kep8 {
+    width: 350px;
+    height: 200px;
+}
+
+#kep9 {
+    width: 350px;
+    height: 200px;
+}
+
+#kep10 {
+    width: 350px;
+    height: 200px;
+}
+
 /* Beimportált dokumentum tulajdonságai */
 
 #dokumentacio {

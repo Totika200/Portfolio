@@ -78,6 +78,31 @@ main{
     justify-content: center;
 }
 
+#leiras {
+    display: flex;
+    justify-content: center;
+    color: rgb(78, 122, 172);
+    margin-top: -30px;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+
+/* Beimportált dokumentum tulajdonságai */
+
+#dokumentacio {
+    display: flex;
+    justify-content: center;
+}
+
+#imppdf {
+    margin-top: 20px;
+    width: 1250px;
+    height: 1200px;
+}
+
 /* Lábrész tulajdonságai */
 
 footer {
@@ -86,6 +111,7 @@ footer {
     opacity: 0.8;
     height: 80px;
     align-items: center;
+    margin-top: 25px;
 }
 
 footer p {

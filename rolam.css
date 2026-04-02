@@ -100,7 +100,7 @@ main{
 #udvozles {
     border: none;
     width: 80%;
-    height: 400px;
+    min-height: 400px;
     display: flex;
     align-items: center;
 }
@@ -117,7 +117,7 @@ main{
 
 #jobbszek {
     width: 300px;
-    height: 230px;
+    min-height: 230px;
     background-color: rgba(175, 204, 238, 0.2);
     margin-left: 100px;
 }
@@ -163,6 +163,7 @@ main{
     flex-direction: row;
     justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 #kezseg-kicsi {
@@ -190,4 +191,119 @@ footer {
 footer p {
     color: white;
     margin-left: 50px;
+}
+
+/* Mobilnál nagyobb eszközökön a reszponzivitás */
+
+@media (max-width: 1044px) {
+
+    /* NAV menü középre */
+    .gombok {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #cim {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* profilkép középre */
+    #profile-img {
+        margin-left: 0;
+        display: block;
+        margin: 18px auto 0 auto;
+    }
+
+    #udvozles {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    #cim, #rolam-udv {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #rolam-leiras {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    #jobbszek {
+        margin-left: 0px;
+    }
+
+    #kockaen {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    #csikbox-rolam {
+        visibility: hidden;
+    }
+
+    #imppdf {
+        width: 90%;
+    }
+
+}
+
+/* Mobil reszponzivitás */
+
+@media (max-width: 480px) {
+
+    /* menü egymás mellett */
+    .gombok {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #gomb {
+        font-size: 18px;
+    }
+
+    #cim, #rolam-udv {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #rolam-leiras {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    #jobbszek {
+        margin-left: 0px;
+    }
+
+    #kockaen {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    #csikbox-rolam {
+        visibility: hidden;
+    }
+
+    #udvozles {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    /* footer középre */
+    footer {
+        justify-content: center;
+    }
+
+    footer p {
+        margin-left: 0;
+        text-align: center;
+    }
 }

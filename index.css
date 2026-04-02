@@ -42,7 +42,6 @@ main{
 /* A header részben található "gombok" tulajdonságai */
 
 .gombok {
-    gap: 20px;
     display: flex;
     gap: 30px;
     margin-left: 800px;
@@ -144,10 +143,8 @@ main{
     text-decoration: none;
 }
 
-#fobox div {
+#projbox {
     border: 1px solid rgba(196, 196, 196, 0.596);
-    width: 250px;
-    height: 240px;
 }
 
 #projbox img {
@@ -167,33 +164,13 @@ main{
     padding-top: 10px;  
 }
 
-/* Legördülő lista tulajdonságai */
-
-#legordulo-full{
-    position: relative;
-    list-style: none;
-}
-
-#legordulo-tartalom{
-    display: none;
-    position: absolute;
-    background-color: rgb(95, 135, 180);
-    list-style: none;
-    padding: 10px;
-    margin: 0;
-    min-width: 180px;
-}
-
-#legordulo-full:hover #legordulo-tartalom{
-    display: block;
-}
-
 /* Még több projekt gomb */
 
 #tobbprojgomb {
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    width: 100%;
 }
 
 #tobbprojgomb button {
@@ -220,11 +197,102 @@ footer {
     display: flex;
     background-color: rgb(95, 135, 180);
     opacity: 0.8;
-    height: 80px;
+    min-height: 80px;
     align-items: center;
 }
 
 footer p {
     color: white;
     margin-left: 50px;
+}
+
+
+/* Mobilnál nagyobb eszközökön a reszponzivitás */
+
+@media (max-width: 1044px) {
+
+    /* NAV menü középre */
+    .gombok {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* profilkép középre */
+    #profile-img {
+        margin-left: 0;
+        display: block;
+        margin: 18px auto 0 auto;
+    }
+
+    /* projektek */
+    #proj, #tobbproj {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    /* kártyák */
+    #fobox div {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* képek */
+    #projbox img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* alcím ne legyen összehúzva */
+    #alcimdoboz {
+        margin-top: 0;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
+/* Mobil reszponzivitás */
+
+@media (max-width: 480px) {
+
+    /* menü egymás mellett */
+    .gombok {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #cim {
+        font-size: 28px;
+    }
+
+    #alcimdoboz {
+        margin-top: -25px;
+    }
+
+    /* gombok teljes szélesség */
+    #tobbgomb button,
+    #tobbprojgomb button {
+        width: 90%;
+    }
+
+    /* projektek 1 oszlop */
+    #proj, #tobbproj {
+        gap: 20px;
+    }
+
+    #fobox div {
+        max-width: 95%;
+        border: none;
+    }
+
+    /* footer középre */
+    footer {
+        justify-content: center;
+    }
+
+    footer p {
+        margin-left: 0;
+        text-align: center;
+    }
 }

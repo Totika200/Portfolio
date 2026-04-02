@@ -102,6 +102,7 @@ main{
     gap: 25px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #kepboxok img {
@@ -157,3 +158,69 @@ footer p {
     color: white;
     margin-left: 50px;
 }
+
+/* Mobilnál nagyobb eszközökön a reszponzivitás */
+
+@media (max-width: 1044px) {
+
+    /* NAV menü középre */
+    .gombok {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #cim {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* profilkép középre */
+    #profile-img {
+        margin-left: 0;
+        display: block;
+        margin: 18px auto 0 auto;
+    }
+
+    #imppdf {
+        width: 90%;
+    }
+
+}
+
+/* Mobil reszponzivitás */
+
+@media (max-width: 480px) {
+
+    /* menü egymás mellett */
+    .gombok {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #gomb {
+        font-size: 18px;
+    }
+
+    #cim {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #imppdf {
+        width: 90%;
+        height: 550px;
+    }
+
+    /* footer középre */
+    footer {
+        justify-content: center;
+    }
+
+    footer p {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+

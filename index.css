@@ -238,6 +238,12 @@ footer p {
         max-width: 250px;
     }
 
+    #fobox a {
+        display: flex;
+        justify-content: center;
+    }
+
+
     /* képek */
     #projbox img {
         width: 100%;
@@ -262,8 +268,13 @@ footer p {
         align-items: center;
     }
 
+    #gomb {
+        font-size: 18px;
+    }
+
     #cim {
         font-size: 28px;
+        text-align: center;
     }
 
     #alcimdoboz {
@@ -271,15 +282,24 @@ footer p {
     }
 
     /* gombok teljes szélesség */
-    #tobbgomb button,
     #tobbprojgomb button {
         width: 90%;
+    }
+
+    #tobbgomb button {
+        width: 100%;
     }
 
     /* projektek 1 oszlop */
     #proj, #tobbproj {
         gap: 20px;
     }
+
+    #fobox a {
+        display: flex;
+        justify-content: center;
+    }
+
 
     #fobox div {
         max-width: 95%;

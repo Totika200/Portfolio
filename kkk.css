@@ -11,7 +11,7 @@ main{
 
 /* A header rész tulajdonságai */
 
-.felsosav{
+#felsosav{
     background-color: rgb(95, 135, 180);
     height: 80px;
     width: 100%;
@@ -40,21 +40,16 @@ main{
     transition: 0.2s ease;
 }
 
-.gombok {
+#gombok {
     display: flex;
     gap: 30px;
     margin-left: 700px;
 }
 
-#gomb{
+.gomb{
     color: white;
     text-decoration: none;
     font-size: 22px;
-}
-
-#gomb-act{
-    text-decoration: underline;
-    color: white;
 }
 
 /* ------------------------------------------------------------------ */
@@ -112,7 +107,7 @@ footer p {
 @media (max-width: 1044px) {
 
     /* NAV menü középre */
-    .gombok {
+    #gombok {
         margin-left: 0;
         flex-wrap: wrap;
         justify-content: center;
@@ -142,12 +137,12 @@ footer p {
 @media (max-width: 480px) {
 
     /* menü egymás mellett */
-    .gombok {
+    #gombok {
         flex-direction: row;
         align-items: center;
     }
 
-    #gomb {
+    .gomb {
         font-size: 18px;
     }
 

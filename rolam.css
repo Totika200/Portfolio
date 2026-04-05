@@ -11,7 +11,7 @@ main{
 
 /* A header rész tulajdonságai */
 
-.felsosav{
+#felsosav{
     background-color: rgb(95, 135, 180);
     height: 80px;
     width: 100%;
@@ -40,27 +40,22 @@ main{
     transition: 0.2s ease;
 }
 
-.gombok {
+#gombok {
     gap: 20px;
     display: flex;
     gap: 30px;
     margin-left: 800px;
 }
 
-#gomb{
+.gomb{
     color: white;
     text-decoration: none;
     font-size: 22px;
 }
 
-#gomb-act{
-    text-decoration: underline;
-    color: white;
-}
-
 /* ------------------------------------------------------------------ */
 
-#cimdoboz {
+.cimdoboz {
     display: flex;
     justify-content: center;
     color: rgb(3, 79, 167);
@@ -68,28 +63,20 @@ main{
 
 /* Cím és a csík tulajdonságai */
 
-#szurkecsik {
+.szurkecsik {
     height: 0px;
     width: 80%;
     border: 1px solid rgba(196, 196, 196, 0.596);
 }
 
-#csikbox {
+.csikbox {
     display: flex;
     justify-content: center;
 }
 
-#csikbox-rolam {
+.csikbox-rolam {
     margin-left: 200px;
 }
-
-#csikbox2 {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-
 
 #udv-kozep {
     display: flex;
@@ -143,14 +130,14 @@ main{
     color: rgb(3, 79, 167);
 }
 
-#eler-szov1 {
+.eler-szov1 {
     margin-top: 30px;
     margin-left: 25px;
     color: rgb(3, 79, 167);
     font-size: 18px;
 }
 
-#eler-szov {
+.eler-szov {
     margin-left: 25px;
     color: rgb(3, 79, 167);
     font-size: 18px;
@@ -166,7 +153,7 @@ main{
     flex-wrap: wrap;
 }
 
-#kezseg-kicsi {
+.kezseg-kicsi {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,7 +185,7 @@ footer p {
 @media (max-width: 1044px) {
 
     /* NAV menü középre */
-    .gombok {
+    #gombok {
         margin-left: 0;
         flex-wrap: wrap;
         justify-content: center;
@@ -258,12 +245,12 @@ footer p {
 @media (max-width: 480px) {
 
     /* menü egymás mellett */
-    .gombok {
+    #gombok {
         flex-direction: row;
         align-items: center;
     }
 
-    #gomb {
+    .gomb {
         font-size: 18px;
     }
 

@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="proj2-plc.css">
     <link rel="icon" href="img/kkando.png">
     <title>Tóth Richárd Adrián - Portfólió</title>
 </head>
 <body>
     <header>
-        <div class="felsosav">
-            <div class="gombok">
-                <a href="index.html" id="gomb">Főoldal</a>
-                <a href="rolam.html" id="gomb">Rólam</a>
-                <a href="kkk.html" id="gomb">Követelmények</a>
-                <a href="oneletrajz.html" id="gomb">Önéletrajz</a>
+        <div id="felsosav">
+            <div id="gombok">
+                <a href="index.html" class="gomb">Főoldal</a>
+                <a href="rolam.html" class="gomb">Rólam</a>
+                <a href="kkk.html" class="gomb">Követelmények</a>
+                <a href="oneletrajz.html" class="gomb">Önéletrajz</a>
             </div>
         </div>
     </header>
     <div><img src="img/en_miniavatar.jpg" alt="" id="profile-img"></div>
     <main>
-        <div id="cimdoboz"><h1 id="cim">Projekt #2 - Automatikus átrakodás</h1></div>
-        <div id="csikbox"><div id="szurkecsik"></div></div>
-        <div id="cimdoboz"><h1 id="cim">Projektfeladat leírása</h1></div>
-        <div id="leiras"><h1>A berendezés működése során egy pneumatikus kar kitolja a korongot a toronytárolóból, majd egy vákuumos megfogóval ellátott forgókar áthelyezi azt a kijelölt pozícióba. A rendszer biztosítja, hogy csak akkor induljon vissza a kar, ha a vákuumszenzor visszajelzése alapján a megfelelő szívóhatás létrejött. A működés teljes egészében a HMI felületéről vezérelhető , ahol a felhasználó a rendszer indítását és leállítását vezérelheti, valamint megadhatja a kitárazandó korongok számát. Amennyiben kifogynak a korongok, abban az esetben a kijelzőn jelzi a rendszer a kezelőnek, hogy nincs korong, illetve a program sem indul el.</h1>
+        <div class="cimdoboz"><h1 class="cim">Projekt #2 - Automatikus átrakodás</h1></div>
+        <div class="csikbox"><div class="szurkecsik"></div></div>
+        <div class="cimdoboz"><h1 class="cim">Projektfeladat leírása</h1></div>
+        <div class="leiras"><h1>A berendezés működése során egy pneumatikus kar kitolja a korongot a toronytárolóból, majd egy vákuumos megfogóval ellátott forgókar áthelyezi azt a kijelölt pozícióba. A rendszer biztosítja, hogy csak akkor induljon vissza a kar, ha a vákuumszenzor visszajelzése alapján a megfelelő szívóhatás létrejött. A működés teljes egészében a HMI felületéről vezérelhető , ahol a felhasználó a rendszer indítását és leállítását vezérelheti, valamint megadhatja a kitárazandó korongok számát. Amennyiben kifogynak a korongok, abban az esetben a kijelzőn jelzi a rendszer a kezelőnek, hogy nincs korong, illetve a program sem indul el.</h1>
         </div>
-        <div id="csikbox"><div id="szurkecsik"></div></div> 
-        <div id="cimdoboz"><h1 id="cim">A projektben használt hardveres eszközök</h1></div>
-        <div id="leiras">
+        <div class="csikbox"><div class="szurkecsik"></div></div> 
+        <div class="cimdoboz"><h1 class="cim">A projektben használt hardveres eszközök</h1></div>
+        <div class="leiras">
             <h1>
                 ● PLC (Programozható Logikai Egység) – Siemens Simatic S7-1200 ●<br>
                 ● HMI Panel – Siemens Simatic HMI ●<br>
@@ -41,9 +42,9 @@
 
             </h1>
         </div>
-        <div id="csikbox"><div id="szurkecsik"></div></div>
-        <div id="cimdoboz"><h1 id="cim">Konklúzió és Önreflexió</h1></div>
-        <div id="leiras" style="margin-bottom: 8px;"><h1>A projekt során felépítettem egy rendszert, ami egy oszloptárolóból automatikusan átpakolja a
+        <div class="csikbox"><div class="szurkecsik"></div></div>
+        <div class="cimdoboz"><h1 class="cim">Konklúzió és Önreflexió</h1></div>
+        <div class="leiras" style="margin-bottom: 8px;"><h1>A projekt során felépítettem egy rendszert, ami egy oszloptárolóból automatikusan átpakolja a
         korongokat a kijelölt pontra, és jelzi a kezelőnek ha üres a tároló. A rendszer HMI-n keresztül
         vezérelt, TIA V17-ben készített program. A projekt során sikerült egy logikusan felépített, ipari
         szemléletű vezérlőrendszert kialakítanom. A munka közben azonban jelentős nehézséggel szembesültem, mivel egy ponton teljesen újra kellett
@@ -55,12 +56,24 @@
         képességem és a PLC programozási gyakorlatom.
         Összeségében a projekt nemcsak szakmai tudásomat mélyítette el, hanem kitartásra és precízebb
         munkavégzésre is tanított.</h1></div>
-        <div id="csikbox"><div id="szurkecsik"></div></div>
-        <div id="cimdoboz"><h1 id="cim">Képek és Videók</h1></div>
-        <div id="kepboxok">
-            <img src="img/proj1/kep.jpg" alt="" id="kep1">
+        <div class="csikbox"><div class="szurkecsik"></div></div>
+        <div class="cimdoboz"><h1 class="cim">Képek és Videók</h1></div>
+        <div class="kepboxok">
+            <img src="img/proj2/kep1.png" alt="" id="kep1">
+            <img src="img/proj2/kep2.png" alt="" id="kep2">
+            <img src="img/proj2/kep3.png" alt="" id="kep3">
         </div>
-        <div id="csikbox" style="margin-top: 25px;"><div id="szurkecsik"></div></div>
+        <div class="kepboxok" style="margin-top: 25px;">
+            <img src="img/proj2/kep4.png" alt="" id="kep4">
+            <img src="img/proj2/kep5.png" alt="" id="kep5">
+            <img src="img/proj2/kep6.png" alt="" id="kep6">
+        </div>
+
+        <div class="kepboxok" style="margin-top: 25px; margin-bottom: 0px;">
+            <video muted loop id="video1"><source src="img/proj2/video.mp4" type="video/mp4"></video>
+        </div>
+        <div id="vidstartgomb"><button onclick="playPause()" id="vidstart_szoveg"><i class="fa fa-play"></i> Videó Elindítása</button></div>
+        <div class="csikbox" style="margin-top: 25px;"><div class="szurkecsik"></div></div>
         <div id="dokumentacio">
             <iframe src="doc/plc.pdf" frameborder="0" id="imppdf"></iframe>
         </div>
@@ -68,5 +81,22 @@
     <footer>
         <p>Copyright © 2026 - Tóth Richárd Adrián</p>
     </footer>
+
+    <script>
+        const video = document.getElementById("video1");
+        const szoveg = document.getElementById("vidstart_szoveg");
+
+        function playPause() { 
+            if (video.paused) {
+                video.play(); 
+                szoveg.innerHTML = '<i class="fa fa-pause"></i> Videó Leállítása';
+            } else {
+                video.pause(); 
+                szoveg.innerHTML = '<i class="fa fa-play"></i> Videó Elindítása';
+            }
+}
+
+    </script>
+
 </body>
 </html>

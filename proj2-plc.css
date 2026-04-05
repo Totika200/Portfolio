@@ -11,7 +11,7 @@ main{
 
 /* A header rész tulajdonságai */
 
-.felsosav{
+#felsosav{
     background-color: rgb(95, 135, 180);
     height: 80px;
     width: 100%;
@@ -40,27 +40,22 @@ main{
     transition: 0.2s ease;
 }
 
-.gombok {
+#gombok {
     gap: 20px;
     display: flex;
     gap: 30px;
     margin-left: 700px;
 }
 
-#gomb{
+.gomb{
     color: white;
     text-decoration: none;
     font-size: 22px;
 }
 
-#gomb-act{
-    text-decoration: underline;
-    color: white;
-}
-
 /* ------------------------------------------------------------------ */
 
-#cimdoboz {
+.cimdoboz {
     display: flex;
     justify-content: center;
     color: rgb(3, 79, 167);
@@ -68,24 +63,24 @@ main{
 
 /* Cím és a csík tulajdonságai */
 
-#szurkecsik {
+.szurkecsik {
     height: 0px;
     width: 80%;
     border: 1px solid rgba(196, 196, 196, 0.596);
 }
 
-#csikbox {
+.csikbox {
     display: flex;
     justify-content: center;
 }
 
-#cimdoboz {
+.cimdoboz {
     display: flex;
     justify-content: center;
     color: rgb(3, 79, 167);
 }
 
-#leiras {
+.leiras {
     display: flex;
     justify-content: center;
     color: rgb(78, 122, 172);
@@ -95,6 +90,86 @@ main{
     padding-left: 120px;
     padding-right: 120px;
 }
+
+/* Képek tulajdonságai */
+.kepboxok {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kepboxok img {
+    border: 1px solid rgba(196, 196, 196, 0.596);
+    border-radius: 8px;
+}
+
+.kepboxok video {
+    border: 1px solid rgba(196, 196, 196, 0.596);
+    border-radius: 8px;
+}
+
+#kep1 {
+    width: 400px;
+    height: 220px;
+}
+
+#kep2 {
+    width: 230px;
+    height: 200px;
+}
+
+#kep3 {
+    width: 400px;
+    height: 220px;
+}
+
+#kep4 {
+    width: 400px;
+    height: 220px;
+}
+
+#kep5 {
+    width: 400px;
+    height: 220px;
+}
+
+#kep6 {
+    width: 400px;
+    height: 200px;
+}
+
+#video1 {
+    width: 20%;
+    height: 20%;
+}
+
+/* Videós gomb */
+
+#vidstartgomb {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#vidstartgomb button {
+    background-color: rgba(2, 61, 129, 0.849);
+    color: white;
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+#vidstartgomb button:hover {
+    cursor: pointer;
+} 
+
+#vidstartgomb button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px #666;
+} 
 
 /* Beimportált dokumentum tulajdonságai */
 
@@ -130,14 +205,14 @@ footer p {
 @media (max-width: 1044px) {
 
     /* NAV menü középre */
-    .gombok {
+    #gombok {
         margin-left: 0;
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
 
-    #cim {
+    .cim {
         font-size: 28px;
         text-align: center;
     }
@@ -147,6 +222,15 @@ footer p {
         margin-left: 0;
         display: block;
         margin: 18px auto 0 auto;
+    }
+
+    #video1 {
+        width: 50%;
+        height: 50%;
+    }
+
+    #kep1, #kep3, #kep4, #kep5, #kep6 {
+        width: 95%;
     }
 
     #imppdf {
@@ -160,18 +244,23 @@ footer p {
 @media (max-width: 480px) {
 
     /* menü egymás mellett */
-    .gombok {
+    #gombok {
         flex-direction: row;
         align-items: center;
     }
 
-    #gomb {
+    .gomb {
         font-size: 18px;
     }
 
-    #cim {
+    .cim {
         font-size: 28px;
         text-align: center;
+    }
+
+    #video1 {
+        width: 95%;
+        height: 95%;
     }
 
     #imppdf {

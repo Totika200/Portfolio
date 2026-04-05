@@ -10,24 +10,24 @@
 </head>
 <body>
     <header>
-        <div class="felsosav">
-            <div class="gombok">
-                <a href="index.html" id="gomb">Főoldal</a>
-                <a href="rolam.html" id="gomb">Rólam</a>
-                <a href="kkk.html" id="gomb">Követelmények</a>
-                <a href="oneletrajz.html" id="gomb">Önéletrajz</a>
+        <div id="felsosav">
+            <div id="gombok">
+                <a href="index.html" class="gomb">Főoldal</a>
+                <a href="rolam.html" class="gomb">Rólam</a>
+                <a href="kkk.html" class="gomb">Követelmények</a>
+                <a href="oneletrajz.html" class="gomb">Önéletrajz</a>
             </div>
         </div>
     </header>
     <div><img src="img/en_miniavatar.jpg" alt="" id="profile-img"></div>
     <main>
-        <div id="cimdoboz"><h1 id="cim">Projekt #4 - Távolról vezérelt ESP32</h1></div>
-        <div id="csikbox"><div id="szurkecsik"></div></div>
-        <div id="cimdoboz"><h1 id="cim">Projektfeladat leírása</h1></div>
-        <div id="leiras"><h1>A projekt célja egy egyszerű okosotthon rendszer megvalósítása volt Raspberry Pi és ESP32 mikrokontrollerek segítségével. A feladat során különböző eszközöket kellett összekapcsolni, amelyek segítségével ventilátorokat és LED fénycsíkokat lehet vezérelni. A rendszer vezérlése több módon is történhetett: fizikai gombokkal, okosgombokkal, valamint webes felületen keresztül. A projekt során két külön panel került kialakításra, amelyekhez ventilátorok és LED csíkok csatlakoztak. A vezérlést ESP32 mikrokontrollerek végezték, amelyek a Raspberry Pi segítségével kommunikáltak egymással. A Raspberry Pi egy központi egységként működött, amelyen a Home Assistant rendszer futott. A Home Assistant segítségével lehetett kezelni az eszközöket és az automatizmusokat. A projekt során az volt a cél, hogy a különböző eszközök egy hálózaton keresztül kommunikáljanak és együtt működjenek. A feladat során a hardverek összekötése mellett a szoftveres konfigurációt is el kellett végezni. A projekt eredményeként egy működő, egyszerű okosotthon vezérlő rendszer jött létre.</h1></div>
-        <div id="csikbox"><div id="szurkecsik"></div></div>
-        <div id="cimdoboz"><h1 id="cim">A projektben használt hardveres eszközök</h1></div>
-        <div id="leiras">
+        <div class="cimdoboz"><h1 class="cim">Projekt #4 - Távolról vezérelt ESP32</h1></div>
+        <div class="csikbox"><div class="szurkecsik"></div></div>
+        <div class="cimdoboz"><h1 class="cim">Projektfeladat leírása</h1></div>
+        <div class="leiras"><h1>A projekt célja egy egyszerű okosotthon rendszer megvalósítása volt Raspberry Pi és ESP32 mikrokontrollerek segítségével. A feladat során különböző eszközöket kellett összekapcsolni, amelyek segítségével ventilátorokat és LED fénycsíkokat lehet vezérelni. A rendszer vezérlése több módon is történhetett: fizikai gombokkal, okosgombokkal, valamint webes felületen keresztül. A projekt során két külön panel került kialakításra, amelyekhez ventilátorok és LED csíkok csatlakoztak. A vezérlést ESP32 mikrokontrollerek végezték, amelyek a Raspberry Pi segítségével kommunikáltak egymással. A Raspberry Pi egy központi egységként működött, amelyen a Home Assistant rendszer futott. A Home Assistant segítségével lehetett kezelni az eszközöket és az automatizmusokat. A projekt során az volt a cél, hogy a különböző eszközök egy hálózaton keresztül kommunikáljanak és együtt működjenek. A feladat során a hardverek összekötése mellett a szoftveres konfigurációt is el kellett végezni. A projekt eredményeként egy működő, egyszerű okosotthon vezérlő rendszer jött létre.</h1></div>
+        <div class="csikbox"><div class="szurkecsik"></div></div>
+        <div class="cimdoboz"><h1 class="cim">A projektben használt hardveres eszközök</h1></div>
+        <div class="leiras">
             <h1>
                 ● Raspberry Pi ●<br>
                 ● 2 db ESP32 C3 mikrokontroller ●<br>
@@ -39,9 +39,9 @@
                 ● 2 db számítógép ●<br>
             </h1>
         </div>
-        <div id="csikbox"><div id="szurkecsik"></div></div>
-        <div id="cimdoboz"><h1 id="cim">A projektben használt szoftveres eszközök</h1></div>
-        <div id="leiras">
+        <div class="csikbox"><div class="szurkecsik"></div></div>
+        <div class="cimdoboz"><h1 class="cim">A projektben használt szoftveres eszközök</h1></div>
+        <div class="leiras">
             <h1>
                 ● Home Assistant ●<br>
                 ● ESPHome ●<br>
@@ -49,25 +49,25 @@
                 ● YAML konfigurációs fájlok ●<br>
             </h1>
         </div>
-        <div id="leiras"><h1>A Home Assistant segítségével történt az okosotthon rendszer kezelése és az automatizmusok létrehozása. Az ESPHome rendszer segítségével konfiguráltuk az ESP32 eszközöket és határoztuk meg azok működését YAML konfigurációs fájlokon keresztül.</h1></div>
-        <div id="csikbox"><div id="szurkecsik"></div></div>
-        <div id="cimdoboz"><h1 id="cim">Konklúzió és Önreflexió</h1></div>
-        <div id="leiras" style="margin-bottom: 8px;"><h1>A projekt során sikerült egy működő okosotthon vezérlő rendszert létrehozni Raspberry Pi és ESP32 eszközök segítségével. A feladat során megismerkedtünk az IoT rendszerek működésének alapjaival és az eszközök hálózati kommunikációjával. A projekt során megtanultuk, hogyan lehet különböző hardver eszközöket összekapcsolni és szoftveresen konfigurálni. A Home Assistant rendszer használata lehetővé tette az eszközök egyszerű vezérlését és automatizmusok létrehozását. A konfigurációs fájlok elkészítése során néhány technikai probléma is felmerült, különösen a konfigurációk letöltése és beállítása közben. Ezeket a problémákat azonban sikerült megoldani, és közben sok tapasztalatot szereztünk. A projekt hozzájárult ahhoz, hogy jobban megértsük az okosotthon rendszerek működését és felépítését. A gyakorlati megvalósítás során fejlődött a problémamegoldó képességünk is. Összességében a projekt elvégzése hasznos tapasztalatot jelentett számunkra. A feladatot érdekesnek és tanulságosnak találtuk, és szívesen dolgoznánk hasonló projekten a jövőben is.</h1></div>
-        <div id="csikbox"><div id="szurkecsik"></div></div>
-        <div id="cimdoboz"><h1 id="cim">Képek és Videók</h1></div>
-        <div id="kepboxok">
+        <div class="leiras"><h1>A Home Assistant segítségével történt az okosotthon rendszer kezelése és az automatizmusok létrehozása. Az ESPHome rendszer segítségével konfiguráltuk az ESP32 eszközöket és határoztuk meg azok működését YAML konfigurációs fájlokon keresztül.</h1></div>
+        <div class="csikbox"><div class="szurkecsik"></div></div>
+        <div class="cimdoboz"><h1 class="cim">Konklúzió és Önreflexió</h1></div>
+        <div class="leiras" style="margin-bottom: 8px;"><h1>A projekt során sikerült egy működő okosotthon vezérlő rendszert létrehozni Raspberry Pi és ESP32 eszközök segítségével. A feladat során megismerkedtünk az IoT rendszerek működésének alapjaival és az eszközök hálózati kommunikációjával. A projekt során megtanultuk, hogyan lehet különböző hardver eszközöket összekapcsolni és szoftveresen konfigurálni. A Home Assistant rendszer használata lehetővé tette az eszközök egyszerű vezérlését és automatizmusok létrehozását. A konfigurációs fájlok elkészítése során néhány technikai probléma is felmerült, különösen a konfigurációk letöltése és beállítása közben. Ezeket a problémákat azonban sikerült megoldani, és közben sok tapasztalatot szereztünk. A projekt hozzájárult ahhoz, hogy jobban megértsük az okosotthon rendszerek működését és felépítését. A gyakorlati megvalósítás során fejlődött a problémamegoldó képességünk is. Összességében a projekt elvégzése hasznos tapasztalatot jelentett számunkra. A feladatot érdekesnek és tanulságosnak találtuk, és szívesen dolgoznánk hasonló projekten a jövőben is.</h1></div>
+        <div class="csikbox"><div class="szurkecsik"></div></div>
+        <div class="cimdoboz"><h1 class="cim">Képek és Videók</h1></div>
+        <div class="kepboxok">
             <img src="img/proj4/kep1.jpg" alt="" id="kep1">
             <img src="img/proj4/kep2.jpg" alt="" id="kep2">
             <img src="img/proj4/kep3.jpg" alt="" id="kep3">
             <img src="img/proj4/kep4.jpg" alt="" id="kep4">
         </div>
-        <div id="kepboxok" style="margin-top: 25px;">
+        <div class="kepboxok" style="margin-top: 25px;">
             <img src="img/proj4/kep5.jpg" alt="" id="kep5">
             <img src="img/proj4/kep6.jpg" alt="" id="kep6">
             <img src="img/proj4/kep7.jpg" alt="" id="kep7">
         </div>
 
-        <div id="kepboxok" style="margin-top: 25px; margin-bottom: 0px;">
+        <div class="kepboxok" style="margin-top: 25px; margin-bottom: 0px;">
             <video muted loop id="video1"><source src="img/proj4/mukodes.mp4" type="video/mp4"></video>
         </div>
         <div id="vidstartgomb"><button onclick="playPause()" id="vidstart_szoveg"><i class="fa fa-play"></i> Videó Elindítása</button></div>

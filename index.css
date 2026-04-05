@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box; /* Azt csinálja, hogy az elem megadott szélességébe beleszámolja a paddinget és a keretet is, így nem nő túl a mérete. */
+}
+
 body{
     margin: auto;
     display: flex;
@@ -12,7 +16,7 @@ main{
 
 /* A header rész tulajdonságai */
 
-.felsosav{
+#felsosav{
     background-color: rgb(95, 135, 180);
     height: 80px;
     width: 100%;
@@ -41,26 +45,21 @@ main{
 
 /* A header részben található "gombok" tulajdonságai */
 
-.gombok {
+#gombok {
     display: flex;
     gap: 30px;
     margin-left: 800px;
 }
 
-#gomb{
+.gomb{
     color: white;
     text-decoration: none;
     font-size: 22px;
 }
 
-#gomb-act{
-    text-decoration: underline;
-    color: white;
-}
-
 /* ------------------------------------------------------------------ */
 
-#cimdoboz {
+.cimdoboz {
     display: flex;
     justify-content: center;
     color: rgb(3, 79, 167);
@@ -68,7 +67,7 @@ main{
 
 /* Cím és a csík tulajdonságai */
 
-#szurkecsik {
+.szurkecsik {
     height: 0px;
     width: 80%;
     border: 1px solid rgba(196, 196, 196, 0.596);
@@ -143,17 +142,17 @@ main{
     text-decoration: none;
 }
 
-#projbox {
+.projbox {
     border: 1px solid rgba(196, 196, 196, 0.596);
 }
 
-#projbox img {
+.projbox img {
     width: 250px;
     height: 200px;
     margin-top: 0px;
 }
 
-#projbox h1 {
+.projbox h1 {
     display: flex;
     justify-content: center;
     margin-top: -5px;
@@ -212,7 +211,7 @@ footer p {
 @media (max-width: 1044px) {
 
     /* NAV menü középre */
-    .gombok {
+    #gombok {
         margin-left: 0;
         flex-wrap: wrap;
         justify-content: center;
@@ -245,7 +244,7 @@ footer p {
 
 
     /* képek */
-    #projbox img {
+    .projbox img {
         width: 100%;
         height: auto;
     }
@@ -263,12 +262,12 @@ footer p {
 @media (max-width: 480px) {
 
     /* menü egymás mellett */
-    .gombok {
+    #gombok {
         flex-direction: row;
         align-items: center;
     }
 
-    #gomb {
+    .gomb {
         font-size: 18px;
     }
 

@@ -150,17 +150,20 @@ main{
     width: 250px;
     height: 200px;
     margin-top: 0px;
+    display: block;
 }
 
 .projbox h1 {
     display: flex;
     justify-content: center;
-    margin-top: -5px;
+    align-items: center;
+    margin-top: 0px;
     font-size: 20px;
     color: rgb(3, 79, 167);
     background-color: rgb(245, 245, 245);
-    height: 31px;
-    padding-top: 10px;  
+    height: 40px;
+    padding-top: 0px;  
+    margin-bottom: 0px;
 }
 
 /* Még több projekt gomb */
